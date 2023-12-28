@@ -1,0 +1,392 @@
+
+header {
+    background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,107,0.5018382352941176) 35%, rgba(0,212,255,1) 100%);
+    color: #fff; 
+    padding: 10px; 
+    text-align: center; 
+
+}
+
+a {
+    transition: color 0.3s ease;
+}
+
+a:link,
+a:visited {
+    color: #9e1443;
+}
+
+a:hover,
+a:active {
+    color: #ff85e4;
+}
+
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #51e2f5;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+section {
+    margin: 20px;
+    color: #fff;
+}
+
+
+h2 {
+
+    padding-bottom: 10px;
+    color: #fff;
+}
+
+
+ul li a {
+    color: #5804a7;
+    text-decoration: none;
+}
+
+
+
+footer {
+    background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,107,0.5018382352941176) 35%, rgba(0,212,255,1) 100%);
+    color: #fff;
+    padding: 20px;
+    text-align: left;
+    white-space: nowrap; 
+    overflow: hidden; 
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin-top: 200px;
+}
+
+
+footer p {
+    animation: scrollText 15s linear infinite; 
+}
+
+
+@keyframes scrollText {
+    0% {
+        transform: translateX(100%); 
+    }
+    100% {
+        transform: translateX(-100%); 
+    }
+}
+
+footer p:hover {
+    animation-play-state: paused; 
+}
+
+footer a {
+    color: #fff; 
+    text-decoration: none; 
+}
+
+
+footer a:hover {
+    color: #ff8800; 
+}
+
+
+nav ul li:hover {
+    background-color: #333; 
+    color: #fff; 
+    transform: scale(1.05); 
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; 
+}
+
+/* Розклад (пр 1) */
+.schedule-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.schedule-table caption {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.schedule-table th, .schedule-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    background-color: #f2f2f2
+}
+
+.schedule-table th {
+    background-color: #f2f2f2;
+    color: #000000;
+}
+
+.schedule-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+
+}
+
+.schedule-table th:first-child, .schedule-table td:first-child {
+    text-align: left;
+    color: #000000;
+}
+.schedule-table .highlight {
+    background-color: #0fdf19;
+    border-top: 2px solid #000;
+    border-right: 2px solid #000;
+    border-left: 2px solid #000;
+}
+
+.schedule-table .border-top {
+    border-top: 2px solid #000;
+    border-right: 2px solid #000;
+    border-left: 2px solid #000;
+    color: #000000;
+}
+
+
+.schedule-table .border-bottom {
+    border-bottom: 2px solid #000;
+    border-right: 2px solid #000;
+    border-left: 2px solid #000;
+    color: #000000;
+}
+
+
+.schedule-table .end {
+    border-top: 2px solid #000;
+    border-right: 2px solid #000;
+    border-left: 2px solid #000;
+    color: #000000;
+}
+
+.schedule-table .sides {
+    border-right: 2px solid #000;
+    border-left: 2px solid #000;
+    color: #000000;
+}
+html, body {
+    width: 100%;
+    height:100%;
+  }
+  
+  
+  @keyframes gradient {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+  }
+
+  .lfooter {
+    padding-bottom: 100px; 
+}
+
+
+/* Стилі для меню */
+.menu {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background: #4f28bdb9;
+    transition: right 0.3s;
+    z-index: 1000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    padding: 10px;
+    border-bottom: 1px solid #444;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.2s;
+}
+
+.menu a:hover {
+    color: #fffb00;
+}
+
+.menu-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.menu-bar {
+    width: 35px;
+    height: 5px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+    border-radius: 2px;
+}
+
+.menu.open {
+    right: 0;
+}
+
+.menu.open .menu-bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.menu.open .menu-bar:nth-child(2) {
+    opacity: 0;
+}
+
+.menu.open .menu-bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Общий стиль */
+
+body {
+    color: #1961d4
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    line-height: 2;
+    background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,107,0.5018382352941176) 35%, rgba(0,212,255,1) 100%);
+    overflow-x: hidden
+}
+
+h1,
+h2,
+h3 {
+    font-weight: bold;
+}
+
+p {
+    margin: 0 0 5px;
+}
+
+/* Список практичних */
+.work-button {
+    background-color: #221b11;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.practical-works {
+    list-style: none;
+    padding: 0;
+}
+
+.practical-works li {
+    margin-bottom: 10px;
+}
+
+.practical-works li:before {
+    content: "⚡";
+    margin-right: 10px;
+}
+
+/* Форма (пр 2) */
+
+.form-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 2px;
+    display: block;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    background: #ffae00;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background: #2980b9;
+}
+
+input,
+select {
+    transition: box-shadow 0.3s ease, border 0.3s ease;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border: 1px solid #3498db;
+    box-shadow: 0 0 3px rgba(52, 152, 219, 0.4);
+}
+
+.form-container {
+    animation: appear 0.5s ease-out;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(-25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+form {
+    padding: 25px;
+}
+
+
